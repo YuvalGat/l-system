@@ -17,10 +17,10 @@ function draw() {
 		new Rule('0', '1[0]0')
 	];
 
-	const length = 1.8;
+	const length = 0.9 * pow(2, 3);
 
 	const sys = new LSystem(axiom, rules);
-	const pattern = sys.iterate(9);
+	const pattern = sys.iterate(7);
 
 	for (const char of pattern) {
 		switch (char) {
