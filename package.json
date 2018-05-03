@@ -3,7 +3,7 @@
   "version": "1.0.0-alpha.1",
   "main": "sketch.js",
   "scripts": {
-    "start": "lr-http-server -p 4000 -w *.js,*.css,*.html"
+    "start": "live-server -q"
   },
   "devDependencies": {
     "p5": "^0.5.9",
