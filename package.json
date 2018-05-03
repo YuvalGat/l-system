@@ -5,9 +5,14 @@
   "scripts": {
     "start": "live-server -q"
   },
+  "xo": {
+    "rules": {
+      "no-unused-vars": 0,
+      "no-undef": 0
+    }
+  },
   "devDependencies": {
-    "p5": "^0.5.9",
-    "lr-http-server": "^0.1.5"
+    "p5": "^0.5.9"
   },
   "dependencies": {}
 }

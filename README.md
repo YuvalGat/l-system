@@ -1,7 +1,3 @@
-# A p5.js project
+# L-system Simulator
 
-NPM Tasks
-
-```yaml
-- start
-```
+This project simulates [L-systems](https://en.wikipedia.org/wiki/L-system) using the `p5.js` framework
