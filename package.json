@@ -8,7 +8,8 @@
   "xo": {
     "rules": {
       "no-unused-vars": 0,
-      "no-undef": 0
+      "no-undef": 0,
+      "no-mixed-operators": 0
     }
   },
   "devDependencies": {
