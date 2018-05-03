@@ -1,12 +1,14 @@
 function setup() {
 	createCanvas(1000, 1000);
-	noLoop();
+	// noLoop();
 	background(0);
 	stroke(255);
 	strokeWeight(2);
+	frameRate(60);
 }
 
 function draw() {
+	background(0);
 	translate(width / 2, height);
 
 	const axiom = '0';
@@ -15,7 +17,7 @@ function draw() {
 		new Rule('0', '1[0]0')
 	];
 
-	const length = 2;
+	const length = 1.8;
 
 	const sys = new LSystem(axiom, rules);
 	const pattern = sys.iterate(9);
@@ -29,11 +31,11 @@ function draw() {
 				break;
 			case '[':
 				push();
-				rotate(PI / 4);
+				rotate((sin(frameCount / 30) + 1) * PI / 8);
 				break;
 			case ']':
 				pop();
-				rotate(-PI / 4);
+				rotate(-(sin(frameCount / 40) + 1) * PI / 8);
 				break;
 			default:
 				break;
